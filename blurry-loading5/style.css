@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    div.bgImage {
+        background-image: url(images/flower-7844597_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+
+    div.content {
+        position: fixed;
+        z-index: 1;
+    }
+
+img {
+    width: 99vw;
+    height: 99.4vh;
+}
+
+h1 {
+    font-family: 'Roboto';
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 4em;
+}
+
+#forest-ext-shadow-host {
+    display: none;
+}
