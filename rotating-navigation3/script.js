@@ -15,13 +15,13 @@ function rotate(dir) {
         mainElement.style.transform = `rotate(${deg}deg)`
         buttonMenu.style.transform = `rotate(${deg-25}deg)`
         closeMenu.style.transform = `rotate(${26+deg}deg)`
-        infoMenu.style.visibility = "visible"
+        infoMenu.style.left = "0"
     } else {
         deg = 0
         buttonMenu.style.transform = `rotate(${deg}deg)`
         mainElement.style.transform = `rotate(${deg}deg)`
         closeMenu.style.transform = `rotate(${35+deg}deg)`
-        infoMenu.style.visibility = "hidden"
+        infoMenu.style.left = "-12em"
     }
     console.log(deg)
 }

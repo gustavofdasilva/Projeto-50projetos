@@ -73,9 +73,10 @@ button img {
     position: fixed;
     filter: invert(1);
     top: 70%;
-    left: 0;
+    left: -12em;
     margin-left: 2em;
-    transition-duration: 1s;
+    transition: 1s;
+    cursor: pointer;
 }
     #info img, #info h3 {
         display: inline-block;
