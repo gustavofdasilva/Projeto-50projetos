@@ -18,8 +18,6 @@ function playAudio(id) {
         let index = Object.keys(audios)[i]
         if(id == index) {
             arrAudios[i].play()
-        } else {
-            arrAudios[i].play()
-            arrAudios[i].stop()}
+        } else {}
     }
 }
