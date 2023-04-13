@@ -27,13 +27,21 @@ h1 {
 }
 
 section {
-    border: 1px solid rgba(26, 26, 26, 0.363);
+    background-color: rgb(235, 235, 235);
+    border: 2px solid rgba(26, 26, 26, 0.363);
     width: 100%;
-    padding: 2.5em 1.5em;
+    
     border-radius: .8em;
     margin: .5em;
     color: rgb(26, 26, 26);
+    transition: .5s;
 }
+    span {   
+        border-radius: .8em;
+        padding: 2em 1.5em;
+        display: block;
+    }
+
 section h2 {
     font-weight: bold;
     font-size: 1.3em;
@@ -46,6 +54,10 @@ section div:nth-child(1) {
     align-items: center;
 }
 
+section div:nth-child(2) {
+    margin-top: 3em;
+}
+
 section div button {
     display: flex;
     align-items: center;
@@ -53,7 +65,11 @@ section div button {
     background: none;
     border: none;
     cursor: pointer;
-    width: 5.5%;
+    width: 2.5em;
+    height: 2.5em;
+    background-image: url(icons/chevron-down.svg);
+    background-size: contain;
+    
 }
 
 
@@ -62,8 +78,20 @@ section div button {
     display: none;
 }
 
-.sec-visible {
-    background-color: red;
+span.sec-visible {
+    background-color: rgba(235, 235, 235, 0.925);
+}
+section.sec-visible {
+    background-image: url("images/chat-bg.png");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    transition: .5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.205);
+}
+
+button.sec-visible {
+    background-image: url(icons/x-circle.svg);
 }
 
 
